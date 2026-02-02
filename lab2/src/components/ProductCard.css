@@ -1,0 +1,51 @@
+.product-card {
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.product-card:hover {
+  border-color: #4CAF50;
+}
+
+.product-card--out-of-stock {
+  opacity: 0.6;
+  border-color: #ccc;
+}
+
+.product-card--out-of-stock:hover {
+  border-color: #ccc;
+}
+
+.product-name {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.product-price {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.product-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-status--in {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.product-status--out {
+  background-color: #ffebee;
+  color: #c62828;
+}

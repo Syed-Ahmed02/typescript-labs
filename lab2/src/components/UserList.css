@@ -1,0 +1,42 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-card {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.user-card h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.user-email {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.user-role {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-role--admin {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.user-role--user {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
