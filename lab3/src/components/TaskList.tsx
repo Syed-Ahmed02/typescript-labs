@@ -18,8 +18,9 @@ export function TaskList({ tasks, onToggle, onDelete }: TaskListProps) {
   useEffect(() => {
     const saved = localStorage.getItem('tasks');
     if (saved) {
-      // BUG: Using 'as Task[]' without validation - could be anything!
-      const parsed = JSON.parse(saved) as Task[];
+      // BUG: Using 'as Task[]' without validation - could be anything
+// can use zod here
+      const parsed = JSON.parse(saved);
       // This would set invalid state if localStorage has corrupted data
       console.log('Loaded tasks from storage:', parsed);
     }

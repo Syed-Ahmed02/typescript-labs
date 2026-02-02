@@ -1,7 +1,6 @@
 import { Task, TaskResult, TaskDisplayInfo } from '../types/task';
 
 // Helper function to get display info from task results
-// BUG 1: Missing case for 'failed' in the discriminated union
 export function getTaskDisplayInfo(result: TaskResult): TaskDisplayInfo {
   switch (result.kind) {
     case 'success':
@@ -16,8 +15,13 @@ export function getTaskDisplayInfo(result: TaskResult): TaskDisplayInfo {
         status: 'pending',
         message: 'Please wait',
       };
-    // TODO: Fix - Add missing case for 'failed'
-  }
+    case "failed":
+      return{
+        title:"failed...",
+        status:"failed",
+        message:"Task has failed"
+      }
+    }
 }
 
 // Helper to sort tasks by priority

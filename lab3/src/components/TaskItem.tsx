@@ -16,11 +16,11 @@ export function TaskItem({ task, onToggle, onDelete }: TaskItemProps) {
   const getPriorityClass = (priority: Priority) => {
     switch (priority) {
       case Priority.Low:
-        return 'priority-Low'; // BUG: Should be 'priority-low' (enum value)
+        return 'priority-low'; // BUG: Should be 'priority-low' (enum value)
       case Priority.Medium:
-        return 'priority-Medium'; // BUG: Should be 'priority-medium'
+        return 'priority-medium'; // BUG: Should be 'priority-medium'
       case Priority.High:
-        return 'priority-High'; // BUG: Should be 'priority-high'
+        return 'priority-high'; // BUG: Should be 'priority-high'
       default:
         return 'priority-unknown';
     }

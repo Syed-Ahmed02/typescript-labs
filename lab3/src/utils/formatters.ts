@@ -12,6 +12,9 @@ export function formatDate(date: string, format: string): string;
 export function formatDate(date: Date | string, format?: string): string {
   if (typeof date === 'string') {
     // BUG: format could be undefined here, causing runtime issues
+    if(!format){
+      return ""
+    }
     return `Formatted: ${date} with ${format}`;
   }
   return date.toLocaleDateString();

@@ -4,7 +4,7 @@ export enum Priority {
   High = 'high',
 }
 
-export type TaskStatus = 'pending' | 'completed';
+export type TaskStatus = 'pending' | 'completed' | "failed";
 
 export interface Task {
   id: string;
@@ -37,6 +37,6 @@ export type TaskResult = TaskSuccess | TaskLoading | TaskFailed;
 
 export interface TaskDisplayInfo {
   title: string;
-  status: TaskStatus | 'failed';
+  status: TaskStatus;
   message: string;
 }
