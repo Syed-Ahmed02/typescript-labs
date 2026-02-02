@@ -1,0 +1,1 @@
+I have an interview coming up and I need to practice my TypeScript debugging skills. Create a sample type lab called lab1. In it, put four bugs, and it should be able to be solved within a 30-minute timeframe. Also create a checklist.md file with the answers so that an AI agent can check if I did it correctly. I will prompt you later. 
